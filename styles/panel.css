@@ -1,0 +1,94 @@
+/* ---------- panel w ktorym umieszcza sie przyciski ----------*/
+#panel_right {
+    display: inline-block;
+    width: 160px;
+    height: 300px;
+    vertical-align: top;
+    position: fixed;
+    left: 1470px;
+    transition: left 1s 2s;
+}
+#panel_right:hover {
+    left: 1340px;
+    transition: left 1s;
+}
+
+/* ---------- animacja przycisku  ----------*/
+@keyframes button_enter_effect {
+    0% {transform:  perspective(400px) rotateY(0deg)}
+    50% {transform:  perspective(400px) rotateY(30deg)}
+    100% {transform: perspective(400px) rotateY(0deg) translateZ(20px)}
+}
+
+/* ---------- deklaracje przyciskow ----------*/
+.button {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    color:white;
+    background-color: brown;
+    display: inline-block;
+    height: 20px;
+}
+.button:hover {
+    cursor: pointer;
+    animation: button_enter_effect 0.5s forwards;
+    box-shadow: inset 0px 0px 10px black;
+}
+.lg {
+    width: 150px;
+}
+.sm {
+    width: 69px;
+}
+.left {
+    border-right: 2px solid black;
+}
+.up_left {
+    border-radius: 7px 0px 0px 0px;
+}
+.up_right {
+    border-radius: 0px 7px 0px 0px;
+}
+.bottom_left {
+    border-radius: 0px 0px 0px 7px;
+}
+.bottom_right {
+    border-radius: 0px 0px 7px 0px;
+}
+
+/* ---------- definicje kolorw przyciskow  ----------*/
+#button3D {
+    background-color: red;
+}
+#buttonClear {
+    background-color: green;
+}
+
+/* ---------- belka przykrywajaca panel przy widkoku bocznym  ----------*/
+#panel_name {
+    background-color: hsla(224, 51%, 50%, 1);
+    color: white;
+    position: absolute;
+    width: 50px;
+    height: 310px;
+    font-size: 40px;
+    left: 0px;
+    top: 0px;
+    border-radius: 7px 0px 0px 7px;
+    opacity: 1;
+    border: 2px solid black;
+    
+    transition: opacity 1s 2s;
+    text-transform: uppercase;
+}
+#panel_name:hover {
+    opacity: 0;
+    transition: opacity 1s;
+}
+#panel_name > div {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* ---------- ----------*/

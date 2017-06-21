@@ -1,0 +1,192 @@
+/* ------------ rozmiary planszy ------------*/
+/* na podstawie podanych rozmiarow, reszta wymaganych rozmiarow pol jest wyliaczna w pliku .js */
+.field_corner { /* to pole musi byc kwadratem */
+    width: 150px;
+    height: 150px;
+}
+.field_horizontal {
+    width: 100px;
+    height: 150px;
+}
+.field_vertical {
+    width: 100px;
+    height: 150px;
+}
+/*------------------------------------*/
+body {
+    background-color: hsla(140, 40%, 45%, 1);
+    margin: 0px;
+}
+#table {
+    padding: 50px 0;
+}
+#board {    
+    margin: 0 50px;
+    background-image: url('../img/monopoly10.jpg');
+    background-size: 100% 100%;
+    position: relative;
+    display: inline-block;
+}
+#inner_board {
+    position: absolute;
+    /*background-color: red;*/
+    opacity: 0;
+}
+#inner_board:hover {
+    opacity: 0.2;
+}
+.field {
+    position: absolute;
+    opacity: 1.0;
+    background-size: 100% 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.field:hover {
+    opacity: 1;
+    z-index: 2;
+    /*box-shadow: inset 0px 0px 15px gold; */
+    /*transform: scale(1.2, 1.2); brakuje mozliwosci dodania kolejnego przeksztalcenia - robie to w js*/
+    animation: onenter_effect 0.5s forwards;
+}
+.field.line2:hover {
+    animation: onenter_effect2 0.5s forwards;
+}
+.field.line3:hover {
+    animation: onenter_effect3 0.5s forwards;
+}
+.field.line4:hover {
+    animation: onenter_effect4 0.5s forwards;
+}
+.field#f10:hover {
+    animation: onenter_effect_f10 0.5s forwards;
+}
+.field#f20:hover {
+    animation: onenter_effect_f20 0.5s forwards;
+}
+.field#f30:hover {
+    animation: onenter_effect_f30 0.5s forwards;
+}
+.line2 {
+    transform-origin: 50% 50%;
+    transform: rotate(90deg);
+}
+.line3 {
+    transform-origin: 50% 50%;
+}
+.line4 {
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+}
+#f10 {
+    /*transform-origin: 99% 99%;*/ /* niepotrzebnie z tym kombinowlem, bo mozna zwczyanie obrocic element wzgledem srodka, ale niech ku pamieci pozostana te deklaracje */
+    transform-origin: 50% 50%;
+    transform: rotate(90deg);
+}
+#f20 {
+    transform-origin: 50% 50%;
+    transform: rotate(180deg);
+}
+#f30 {
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+}
+
+/* animacja po wejsciu na pole dla dolnej lini*/
+@keyframes onenter_effect {
+    0% {transform:  perspective(400px) rotateY(0deg)}
+    50% {transform:  perspective(400px) rotateY(30deg)}
+    100% {transform: perspective(400px) rotateY(0deg) translateZ(20px)}
+}
+@keyframes onenter_effect_f10 {
+    0% {transform: rotate(90deg) perspective(400px) rotateY(0deg)}
+    50% {transform: rotate(90deg) perspective(400px) rotateY(30deg)}
+    100% {transform: rotate(90deg) perspective(400px) rotateY(0deg) translateZ(20px)}
+}
+@keyframes onenter_effect_f20 {
+    0% {transform:  rotate(180deg) perspective(400px) rotateY(0deg)}
+    50% {transform: rotate(180deg) perspective(400px) rotateY(30deg)}
+    100% {transform: rotate(180deg) perspective(400px) rotateY(0deg) translateZ(20px)}
+}
+@keyframes onenter_effect_f30 {
+    0% {transform: rotate(-90deg) perspective(400px) rotateY(0deg)}
+    50% {transform: rotate(-90deg) perspective(400px) rotateY(30deg)}
+    100% {transform: rotate(-90deg) perspective(400px) rotateY(0deg) translateZ(20px)}
+}
+
+/* debug */
+body, div {
+    /*border: 1px solid black;*/
+}
+
+/*
+#f1{
+    animation: anim12 4s forwards linear;
+    z-index: 2;
+    transform-origin: 0% 0%;
+}*/
+/* mozna wygenerowac animacje oborotu za pomoca macierzy, jesli wygneruje sie np 100 klatek z wartosciami odpowiadjacymi sinus i cosinus */
+/* ale rownie dobrze mozna interpolowac sinusa funkcja liniowa tzw piłą */
+@keyframes anim1 {
+    0% {transform: matrix(1,0,0,1, 0,0)}
+    25% {transform: matrix(0,1,-1,0, 0,0)}
+    50% {transform: matrix(-1,0,0,-1, 0,0)}
+    75% {transform: matrix(0,-1,1,0, 0,0)}
+    100% {transform: matrix(1,0,0,1, 0,0)}
+}
+@keyframes anim2 {
+    0% {transform: matrix(1,0,0,1, 0,0)}
+    25% {transform: matrix(0,1,-1,0, 0,0)}
+    50% {transform: matrix(-1,0,0,-1, 0,0)}
+    75% {transform: matrix(0,1,1,0, 0,0)}
+    100% {transform: matrix(-1,0,0,1, 0,0)}
+}
+@keyframes anim3 { /* obiekt przemieszcza sie oraz zmienia rozmiary w osi Y - za zmiane rozmiru w osi Y odpowiada trzecia wspolrzedna, za X druga*/
+    0% {transform: matrix(1,0,0,1, 0,0)}
+    25% {transform: matrix(0,1,-0.6,0, 20,20)}
+    50% {transform: matrix(-1,0,0,-1, 0,0)}
+    75% {transform: matrix(0,-1,0.6,0, -20,-20)}
+    100% {transform: matrix(1,0,0,1, 0,0)}
+}
+@keyframes anim4 { /* animacja obrotu w prawo*/
+    0% {transform: matrix(1,0,0,1, 0,0)}
+    100% {transform: matrix(0,1,-1,0, 0,0)}
+}
+@keyframes anim5 { /* animacja obrotu w lewo*/
+    0% {transform: matrix(1,0,0,1, 0,0)}
+    100% {transform: matrix(0,-1,1,0, 0,0)}
+}
+@keyframes anim6 { /* obrot o 270 stopni z pozyci -180, obrot w lewo*/
+    0% {transform: matrix(-1,0,0,-1, 0,0)}
+    100% {transform: matrix(0,-1,1,0, 0,0)}
+}
+@keyframes anim7 { /* skewX w strone dodatnia x, trasnform origin jest na 50 50, wiec gora elementu pojdzie na ujemne, dol elementu na dodatnie, bo os Y jest skierowana w dol i wychodzi jakby ze srodka elementu, dla tego transform origin*/
+    0% {transform: matrix(1,0,0,1, 0,0)}
+    100% {transform: matrix(1,0,1,1, 0,0)}
+}
+@keyframes anim8 { /* skew Y*/
+    0% {transform: matrix(1,0,0,1, 0,0)}
+    100% {transform: matrix(1,1.5,0,1, 0,0)}
+}
+@keyframes anim9 { /* obrot, translacja*/
+    0% {transform: rotate(0deg) translate(0px,0px)}
+    100% {transform: rotate(90deg) translate(100px,0px)}
+}
+@keyframes anim10 { /* translacja, obrot */
+    0% {transform: translate(0px,0px) rotate(0deg) }
+    100% {transform: translate(100px,0px) rotate(180deg) }
+}
+@keyframes anim11 { /* translacja, obrot, translacja */
+    0% {transform: translate(0px,0px) rotate(0deg) translate(0px,0px) }
+    100% {transform: translate(100px,0px) rotate(180deg) translate(50px,0px) }
+}
+@keyframes anim12 { /*  */
+    0% {transform: scale(1,1) rotate(0deg) }
+    100% {transform: scale(1.5, 1.8) rotate(90deg) }
+}
+@keyframes anim13 { /*  */
+    0% {transform: rotate(0deg) scale(1,1)  }
+    100% {transform:  rotate(90deg) scale(1.5, 1.8) }
+}
+
+

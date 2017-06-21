@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/board.css" rel="stylesheet">
+        <link href="styles/panel.css" rel="stylesheet">
+        <script src="js/init.js"></script>
+        <script src="js/manipulateBoard.js" defer></script>
+    </head>
+    <body onload="init.start()">
+        <div id="table">
+            <div id="board">
+                <div class="field field_corner" id="f0"></div>
+                <div class="field field_corner" id="f10"></div>
+                <div class="field field_corner" id="f20"></div>
+                <div class="field field_corner" id="f30"></div>
+                
+                <div class="field field_horizontal line1" id="f1"></div>
+                <div class="field field_horizontal line1" id="f2"></div>
+                <div class="field field_horizontal line1" id="f3"></div>
+                <div class="field field_horizontal line1" id="f4"></div>
+                <div class="field field_horizontal line1" id="f5"></div>
+                <div class="field field_horizontal line1" id="f6"></div>
+                <div class="field field_horizontal line1" id="f7"></div>
+                <div class="field field_horizontal line1" id="f8"></div>
+                <div class="field field_horizontal line1" id="f9"></div>
+                
+                <div class="field field_vertical line2" id="f11"></div>
+                <div class="field field_vertical line2" id="f12"></div>
+                <div class="field field_vertical line2" id="f13"></div>
+                <div class="field field_vertical line2" id="f14"></div>
+                <div class="field field_vertical line2" id="f15"></div>
+                <div class="field field_vertical line2" id="f16"></div>
+                <div class="field field_vertical line2" id="f17"></div>
+                <div class="field field_vertical line2" id="f18"></div>
+                <div class="field field_vertical line2" id="f19"></div>
+                
+                <div class="field field_horizontal line3" id="f21"></div>
+                <div class="field field_horizontal line3" id="f22"></div>
+                <div class="field field_horizontal line3" id="f23"></div>
+                <div class="field field_horizontal line3" id="f24"></div>
+                <div class="field field_horizontal line3" id="f25"></div>
+                <div class="field field_horizontal line3" id="f26"></div>
+                <div class="field field_horizontal line3" id="f27"></div>
+                <div class="field field_horizontal line3" id="f28"></div>
+                <div class="field field_horizontal line3" id="f29"></div>
+                
+                <div class="field field_vertical line4" id="f31"></div>
+                <div class="field field_vertical line4" id="f32"></div>
+                <div class="field field_vertical line4" id="f33"></div>
+                <div class="field field_vertical line4" id="f34"></div>
+                <div class="field field_vertical line4" id="f35"></div>
+                <div class="field field_vertical line4" id="f36"></div>
+                <div class="field field_vertical line4" id="f37"></div>
+                <div class="field field_vertical line4" id="f38"></div>
+                <div class="field field_vertical line4" id="f39"></div>
+                
+                <div id="inner_board"></div>
+            </div>
+            <div id="panel_right">
+                <div id="button_rotate_left" class="button sm up_left left">w lewo</div><div id="button_rotate_right" class="button sm up_right">w prawo</div>
+                <div id="button3D" class="button lg">3D</div>
+                <div id="buttonClear" class="button lg">clear</div>
+                <div id="buttonTXminus" class="button sm left">tx -</div><div id="buttonTXplus" class="button sm ">tx +</div>
+                <div id="buttonTYminus" class="button sm left">ty -</div><div id="buttonTYplus" class="button sm ">ty +</div>
+                <div id="buttonTZminus" class="button sm left">tz -</div><div id="buttonTZplus" class="button sm ">tz +</div>
+                <div id="buttonSXminus" class="button sm left">sx -</div><div id="buttonSXplus" class="button sm ">sx +</div>
+                <div id="buttonSYminus" class="button sm left">sy -</div><div id="buttonSYplus" class="button sm ">sy +</div>
+                <div id="buttonRXminus" class="button sm left">rx -</div><div id="buttonRXplus" class="button sm ">rx +</div>
+                <div id="buttonPminus" class="button sm bottom_left left">persp -</div><div id="buttonPplus" class="button sm bottom_right">persp +</div>
+                
+                <div id="panel_name">
+                    <div>P</div>
+                    <div>A</div>
+                    <div>N</div>
+                    <div>E</div>
+                    <div>L</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
