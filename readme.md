@@ -56,3 +56,6 @@ Pan policjant z prawego górnego przeniósł się w lewy.
 ...
 ![](http://i.imgur.com/5ESRqrF.png)
 
+
+### Uruchamianie 
+Pobrać repozytorium i otworzyć plik index.html w przeglądarce firefox.
