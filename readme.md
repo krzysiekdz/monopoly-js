@@ -13,25 +13,33 @@ Widok domyślny planszy ...
 Plansza jest interaktywna - po najechaniu kursorem na pole, to delikatnie unosi siê do góry i powiększa (pole w prawym górnym rogu).
 ![](http://i.imgur.com/H303KzG.png)
 
-Boczny panel umozliwa rozmaite przekształcenia planszy, w tym w widoku 3d.
+Boczny panel umozliwa rozmaite przekształcenia planszy, w tym w widoku 3d (po najechaniu na napis "panel", ten staje się widoczny).
 ![](http://i.imgur.com/zwiaDSk.png)
 
 ### Przykładowe przekształcenia planszy: <br>
 
-Obrót w lewo ...
+1. Animacja obrotu w lewo ...
 ![](http://i.imgur.com/zwiaDSk.png)
 
 ...
 ![](http://i.imgur.com/H7T1xKM.png)
 
-...
+Pan policjant z prawego górnego przeniósł się w lewy.
 ![](http://i.imgur.com/bFVB4ky.png)
 
+2. Animacja przejścia w widok 3d planszy
+![](http://i.imgur.com/p8AEYPY.png)
 
-![]()
-![]()
-![]()
-![]()
+...
+![](http://i.imgur.com/biLx3Tw.png)
+
+3. Przesuwanie planszy w prawo (przycisk "tx")
+![](http://i.imgur.com/opzRYSx.png)
+
+...
+![](http://i.imgur.com/biLx3Tw.png)
+
+
 ![]()
 ![]()
 ![]()
