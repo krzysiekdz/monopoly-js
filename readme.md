@@ -10,16 +10,24 @@ Widok domyślny planszy ...
 ![](http://i.imgur.com/DFF2peD.png)
 
 
-Plansza jest interaktywna - po najechaniu kursorem na pole, to delikatnie unosi siê do góry i powiększa.
+Plansza jest interaktywna - po najechaniu kursorem na pole, to delikatnie unosi siê do góry i powiększa (pole w prawym górnym rogu).
 ![](http://i.imgur.com/H303KzG.png)
 
 Boczny panel umozliwa rozmaite przekształcenia planszy, w tym w widoku 3d.
 ![](http://i.imgur.com/zwiaDSk.png)
 
+### Przykładowe przekształcenia planszy: <br>
 
-![]()
-![]()
-![]()
+Obrót w lewo ...
+![](http://i.imgur.com/zwiaDSk.png)
+
+...
+![](http://i.imgur.com/H7T1xKM.png)
+
+...
+![](http://i.imgur.com/bFVB4ky.png)
+
+
 ![]()
 ![]()
 ![]()
