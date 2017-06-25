@@ -40,7 +40,7 @@ Pan policjant z prawego górnego przeniósł się w lewy.
 ![](http://i.imgur.com/opzRYSx.png)
 
 
-4. Obracanie planszy 
+4. Obracanie planszy w osi X (przyciski "rx+/rx-")
 ![](http://i.imgur.com/5QJ3nrH.png)
 
 .....
@@ -50,7 +50,7 @@ Pan policjant z prawego górnego przeniósł się w lewy.
 ![](http://i.imgur.com/RGpATSi.png)
 
 
-5. Przyblizanie planszy (wrażenia unoszenia się nad planszą)
+5. Przyblizanie planszy (wrażenia unoszenia się nad planszą). Przycisk - "ty+/ty-".
 ![](http://i.imgur.com/DNTDosc.png)
 
 ...
