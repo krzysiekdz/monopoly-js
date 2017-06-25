@@ -33,21 +33,18 @@ Pan policjant z prawego górnego przeniósł się w lewy.
 ...
 ![](http://i.imgur.com/biLx3Tw.png)
 
-3. Przesuwanie planszy w prawo (przycisk "tx")
-![](http://i.imgur.com/opzRYSx.png)
-
-...
+3. Przesuwanie planszy w prawo (przycisk "tx+")
 ![](http://i.imgur.com/biLx3Tw.png)
 
+...
+![](http://i.imgur.com/opzRYSx.png)
 
-![]()
-![]()
-![]()
-![]()
-![]()
-![]()
-![]()
-![]()
-![]()
-![]()
-![]()
+
+
+![](http://i.imgur.com/5QJ3nrH.png)
+![](http://i.imgur.com/qSY9Ea7.png)
+![](http://i.imgur.com/RGpATSi.png)
+
+![](http://i.imgur.com/DNTDosc.png)
+![](http://i.imgur.com/5ESRqrF.png)
+
