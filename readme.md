@@ -40,11 +40,19 @@ Pan policjant z prawego górnego przeniósł się w lewy.
 ![](http://i.imgur.com/opzRYSx.png)
 
 
-
+4. Obracanie planszy 
 ![](http://i.imgur.com/5QJ3nrH.png)
+
+.....
 ![](http://i.imgur.com/qSY9Ea7.png)
+
+....
 ![](http://i.imgur.com/RGpATSi.png)
 
+
+5. Przyblizanie planszy (wrażenia unoszenia się nad planszą)
 ![](http://i.imgur.com/DNTDosc.png)
+
+...
 ![](http://i.imgur.com/5ESRqrF.png)
 
